@@ -16,7 +16,8 @@ try:
      cur.execute("INSERT INTO test2(ad,zaman) VALUES('mesut',now())");
      con.commit()
      end_time = time.time()
-     print "Yazma suresi %s"%(end_time-start_time),
+     print 'Yazma suresi %s'  % (end_time-start_time)
+
 except psycopg2.DatabaseError, e:
     
     if con:
