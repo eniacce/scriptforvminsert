@@ -9,7 +9,7 @@ con = None
 
 try:
 
-    con = psycopg2.connect("dbname='postgres' user='postgres' password='123456' host='localhost'");
+    con = psycopg2.connect("dbname='postgres' user='postgres' password='123456' host='185.144.14.20'");
     cur = con.cursor();
     while True:
      start_time = time.time()
